@@ -33,6 +33,10 @@ set statusline+=\ %p%%
 set wildmenu
 set wildoptions=pum
 set wildmode=list:longest,full
+set encoding=utf-8
+set fileencoding=utf-8
+set fileencodings=utf-8,latin1
+
 colorscheme slate
 
 let g:mapleader=" "
