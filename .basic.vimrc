@@ -113,23 +113,3 @@ function! ToggleTerminal()
     let g:term_buf = bufnr('%')
   endif
 endfunction
-
-
-" Plugins
-call plug#begin()
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'jiangmiao/auto-pairs'
-Plug 'airblade/vim-gitgutter'
-Plug 'ggml-org/llama.vim'
-call plug#end()
-
-" Key bindings for GitGutter
-nmap ghs <Plug>(GitGutterStageHunk)
-nmap ghu <Plug>(GitGutterUndoHunk)
-nmap ghp <Plug>(GitGutterPreviewHunk)
-nmap ]h <Plug>(GitGutterNextHunk)
-nmap [h <Plug>(GitGutterPrevHunk)
-
-" Set the endpoints for llama.vim
-let g:llama_config = { 'endpoint_fim': 'http://localhost:8012/infill', 'auto_fim' : v:false }
